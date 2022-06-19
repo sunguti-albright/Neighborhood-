@@ -3,7 +3,7 @@
 #### Author: [Sunguti Albright](https://github.com/sunguti-albright)
 
 
-* Link to live site: [Neighbour-hood](https://github.com/albrighthood.herokuapp.com/)
+* Link to live site: [Neighbour-hood](https://albrighthood.herokuapp.com/)
 
 ## Description
 A web application that allows you to be in the loop about everything happening in your neighborhood. Also provides contact information for amenities in your neighborhood.
