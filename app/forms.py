@@ -27,3 +27,17 @@ class NewHoodForm(forms.ModelForm):
         model = Neighbourhood
         exclude = ('admin',)
 
+class EditHoodForm(forms.ModelForm):
+    class Meta:
+        model = Neighbourhood
+        exclude = ('admin',)
+class NewBizForm(forms.ModelForm):
+    class Meta:
+        model = Business
+        exclude = ('user',)
+
+
+class NewPostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        exclude = ('user',)
