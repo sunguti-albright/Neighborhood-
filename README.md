@@ -49,7 +49,7 @@ As a user of the web application you will be able to:
 #### Clone the Repo and rename it to suit your needs.
 ```bash
 git clone https://github.com/sunguti-albright/Neighbour-hood
-git clone https://github.com/sunguti-albright/Neighbour-hood
+
 ```
 #### Initialize git and add the remote repository
 ```bash
