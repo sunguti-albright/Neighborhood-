@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{{ block.super}}
+
+<div class="container-fluid" style="background-image: url('https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&w=800');  background-repeat: no-repeat; background-size: cover; background-position: relative; height: 100vh; text-align:center; overflow-x:hidden;" >
+    <h1 style="font-size:100px; margin-top:150px; color:#7cc5da; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif " >The NeighbourHood</h1>
+    <a href="{%url 'hood'%}"  style="margin-top:50px; " class="btn default-color btn-small">View Hoods</a>
+
+</div>
+<!-- <h1>Hood</h1> -->
+
+{% endblock %}
