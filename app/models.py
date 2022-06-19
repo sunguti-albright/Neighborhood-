@@ -13,7 +13,7 @@ class Profile(models.Model):
     email = models.CharField(max_length=100, default = '')
     location = models.CharField(max_length=100,blank =True)
     neighbourhood = models.ForeignKey("Neighbourhood",on_delete=models.CASCADE, default='', null=True, blank=True)
-    profile_pic = models.ImageField( upload_to='profile/', blank ='true',default='default.jpg')
+    profile_pic = models.ImageField( upload_to='profile/', blank ='true',default='default.png')
 
     def __str__(self):
         return f'{self.user.username} Profile'
@@ -30,6 +30,8 @@ def create_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
     
+
+
 class Neighbourhood(models.Model):
     name = models.CharField(max_length=50)
     location= models.CharField(max_length=60)
@@ -49,6 +51,8 @@ class Neighbourhood(models.Model):
 
     def delete_neighborhood(self):
         self.delete()
+
+
 
 class Business(models.Model):
     name = models.CharField(max_length=50)
@@ -96,7 +100,3 @@ class Post(models.Model):
 
     def delete_post(self):
         self.delete()
-
-
-
-
